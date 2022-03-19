@@ -33,7 +33,9 @@
                     <input type="text" id="address" name="address">
                     <label for="city">Your City</label>
                     <input type="text" id="city" name="city">
-                    <label for="state">Your State</label>
+                    
+                    <!--NORMAL SELECT BOX-->
+                    <!-- <label for="state">Your State</label>
                         <select name="state">
                             <option value=""></option>
                             <option value="AL">Alabama</option>
@@ -44,7 +46,21 @@
                             <option value="CT">Connecticut</option>
                             <option value="CO">Colorado</option>
                             <option value="DE">Deleware</option>
-                        </select>
+                        </select> -->
+
+                        <!--DATALIST BONUS OPTION-->
+                        <label for="state">Your State</label>
+                        <input list="state-list" name="state" id="state">
+                        <datalist id="state-list">
+                            <option value="Alabama">
+                            <option value="Alaska">
+                            <option value="Arizona">
+                            <option value="Arkansas">
+                            <option value="California">
+                            <option value="Connecticut">
+                            <option value="Colorado">
+                            <option value="Delaware">
+                        </datalist>
 
                     <label for="zip">Your Zipcode</label>
                     <input type="text" id="zip" name="zip">
