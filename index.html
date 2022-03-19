@@ -12,23 +12,107 @@
     </nav>
     <main>
         <h2>Vacation Contest Sign-Up Form</h2>
-        <form> <!-- TODO: Set Action and Method Properties -->
+        <!-- TODO: Set Action and Method Properties -->
+        <form method="GET" action="results.html"> 
             <div>
                 <label for="firstname">Your First Name</label>
                 <input type="text" id="firstname" name="firstname">
+                <label for="firslast">Your Last Name</label>
+                <input type="text" id="lastname" name="lastname">
                 <!-- TODO: Create a "lastname" input with type "text" -->
             </div>
             <!-- TODO: Make fieldset and legend -->
             <!-- Todo: Email Input -->
             <!-- Todo: Street Address Input -->
             <!-- Todo: City, State, and Zip Inputs -->
+                <fieldset>
+                    <legend>Your Contact Info</legend>
+                    <label for="email">Your Email</label>
+                    <input type="text" id="email" name="email">
+                    <label for="address">Your Street Address</label>
+                    <input type="text" id="address" name="address">
+                    <label for="city">Your City</label>
+                    <input type="text" id="city" name="city">
+                    <label for="state">Your State</label>
+                        <select name="state">
+                            <option value=""></option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="CO">Colorado</option>
+                            <option value="DE">Deleware</option>
+                        </select>
+
+                    <label for="zip">Your Zipcode</label>
+                    <input type="text" id="zip" name="zip">
+                </fieldset>
 
             <!-- TODO: Second fieldset -->
             <!-- TODO: Radio buttons for selecting preferred destination -->
-            <!-- TODO: Color input for selecting favorite color -->
-            <!-- TODO: Checkboxes for selecting extra add-ons -->
-            
+                <fieldset>
+                    <legend>Your Preferences</legend>
+                    <h3>Choose your location</h3>
+                    <div>
+                        <input type="radio" id="aruba" name="location" value="Aruba">
+                        <label for="aruba">Aruba</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="japan" name="location" value="Japan">
+                        <label for="japan">Japan</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="reykjavik" name="location" value="Reykjavik">
+                        <label for="reykjavik">Reykjavik</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="new-zealand" name="location" value="New Zealand">
+                        <label for="new-zealand">New Zealand</label>
+                    </div>
+                    <br>
+                    <!-- TODO: Color input for selecting favorite color -->
+                    <h3>Select your favorite color.</h3>
+                    <label for="color">Color</label>
+                    <input type="color" id="color" name="color">
+                    <br>
+                    
+                    <!-- TODO: Checkboxes for selecting extra add-ons -->
+                    <h3>Select your add-on choices.</h3>
+                    <div>
+                        Sauna Access:
+                        <input type="checkbox"
+                            value="sauna-access"
+                            name="extras">
+                    </div>
+                    <div>
+                        In-room Hot Tub:
+                        <input type="checkbox"
+                            value="in-room-hot-tub"
+                            name="extras">
+                    </div>
+                    <div>
+                        Escape Room:
+                        <input type="checkbox"
+                            value="escape-room"
+                            name="extras">
+                    </div>
+                    <div>
+                        Tour:
+                        <input type="checkbox"
+                            value="tour"
+                            name="extras">
+                    </div>
+
+                </fieldset>
+
             <!-- TODO: Submit Button -->
+            <br>
+            <div>
+                <input type="submit" value="Enter the Contest">
+
+            </div>
         </form>
     </main>
     <footer>
